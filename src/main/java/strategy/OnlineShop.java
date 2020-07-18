@@ -7,7 +7,7 @@ public class OnlineShop {
         this.payment = payment;
     }
 
-    public String toPay (Double toPay){
+    public String toPay(Double toPay) {
         return payment.pay(toPay);
     }
 
