@@ -1,5 +1,7 @@
 package templatemethod;
 
+import java.util.logging.SocketHandler;
+
 public abstract class GoToWork {
     abstract void breakfast();
     abstract void transport ();
@@ -7,6 +9,11 @@ public abstract class GoToWork {
     public final void goToWork (){
         breakfast();
         transport();
+        accesToDoor();
+    }
+
+    private void accesToDoor() {
+        System.out.println("Door opened.");
     }
 
 }
